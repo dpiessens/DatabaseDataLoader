@@ -22,6 +22,6 @@ The utility connects to the database, and runs through each of the above folders
 
 It is important to note that order doesn't matter here. Constraints and foreign keys are disabled during load and enabled once the load is complete.
 
-The utility will log each file and indicate how many records have been inserted, updated or skipped.
+The utility will log each file and indicate how many records have been inserted, updated or skipped. To support large data, currently transactions are not being used when loading data.
 
 
