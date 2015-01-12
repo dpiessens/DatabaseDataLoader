@@ -12,7 +12,7 @@ DatabaseDataLoader.exe -baseDir <baseDirectory> -connection <connectionString>
 The _baseDir_ argument specifies the base directory to load data from. This folder should contain two child directores:
 
 * InsertOnly - Files in this directory are checked for the primary key existence and if the record exists it will not be written.
-* Updatable - Files in this directory are either inserted or updated on every run.
+* Updateable - Files in this directory are either inserted or updated on every run.
 
 The _connection_ argument should be a .NET connection string to the database that is loaded.
 
