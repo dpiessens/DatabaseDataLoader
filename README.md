@@ -3,7 +3,7 @@ DatabaseDataLoader
 
 A tool that assists in loading data into a database using CSV files. The tool is simple, lightweight and clearly maps to your database to assist in database updates or seeding data.
 
-h3. Basic Usage
+### Basic Usage
 
 `
 DatabaseDataLoader.exe -baseDir <baseDirectory> -connection <connectionString>
@@ -16,7 +16,7 @@ The _baseDir_ argument specifies the base directory to load data from. This fold
 
 The _connection_ argument should be a .NET connection string to the database that is loaded.
 
-h3. How it Works
+### How it Works
 
 The utility connects to the database, and runs through each of the above folders. For each .csv file it encounters, it uses the file name to map to a table in the database. Then it reflects the primary key from the schema and uses that to determine if the record exists. Then based on the folder it inserts, updates or skips the record.
 
